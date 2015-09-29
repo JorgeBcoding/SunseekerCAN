@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx
+END
+ftdiport.cat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/ftdiport.cat
+END
+ftd2xx.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/ftd2xx.h
+END
+ftdibus.cat
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/ftdibus.cat
+END
+ftdiport.inf
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/ftdiport.inf
+END
+LogoVerificationReport.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/LogoVerificationReport.pdf
+END
+ftdibus.inf
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/ftdibus.inf
+END

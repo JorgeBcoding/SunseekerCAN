@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/lib/x64
+END
+pthreadVC2.lib
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/lib/x64/pthreadVC2.lib
+END
+md5.sum
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/lib/x64/md5.sum
+END

@@ -1,0 +1,208 @@
+#include <iostream>
+#include <QThread>
+#include "canusb.h"
+
+using namespace std;
+
+CANusb::CANusb(QObject *parent) :
+    QObject(parent)
+{
+    connectCANusb();
+}
+
+/*********** CONNECT CANUSB ****************************//**
+*   @brief Starts the read and write threads and
+*   opens the connection to the CAN usb device.
+***********************************************************/
+bool CANusb::connectCANusb()
+{
+    FT_STATUS   ftStatus;
+    //string      serialNumber = "LWRUKKF1";
+    int         iport = 0;
+    char *clear1 = new char[2], *clear2 = new char[2];
+
+
+    // Connect to the canUSB
+    if ( FT_OK != ( ftStatus = FT_Open( iport, &ftHandle ) ) ){
+        cerr << "Failed to connect to device\nError:" << ftStatus << endl;
+        return false;
+    }
+
+    FT_Purge(ftHandle, FT_PURGE_RX | FT_PURGE_TX);
+
+
+    // Create the threads for reading and writing
+    // to the canusb device
+    canReader = new CANusbReader(ftHandle);
+    writeThread = new QThread();
+    canWriter = new CANusbWriter(ftHandle);
+    canWriter->moveToThread(writeThread);
+
+    // Connect the signals and slots
+    connect(this, SIGNAL(newCommand(char*)), canWriter, SLOT(sendCommand(char*)) );
+    connect(canReader, SIGNAL(newCANmsg(CANMsg)), this, SIGNAL(newCANmsg(CANMsg)));
+    connect(canReader, SIGNAL(newCANmsg(CANMsg)), canWriter, SLOT(logCanMsg(CANMsg)) );
+
+    // Start the threads
+    writeThread->start();
+    cout << "Write thread started" << endl;
+    canReader->start();
+    cout << "Read thread started" << endl;
+
+    // Send 2 [CR] to the CANusb to clear any old messages
+    snprintf(clear1, 2, "\r");
+    snprintf(clear2, 2, "\r");
+    emit newCommand(clear1);
+    emit newCommand(clear2);
+
+    return true;
+}
+/*********** DISCONNECT CANUSB **************************//**
+*   @brief Stops the read and write threads and
+*   closes the connectionto the CAN usb device.
+*   @return False if errors occured.
+************************************************************/
+bool CANusb::disconnectCANusb()
+{
+    FT_STATUS ftStatus;
+
+    canReader->stop();
+    writeThread->exit();
+
+
+    if ( FT_OK != ( ftStatus = FT_Close( ftHandle ) ) ){
+      cerr << "Failed to disconnect from device\nError:" << ftStatus << endl;
+      return false;
+    }
+
+    ftHandle = NULL;
+    return true;
+}
+
+/*********** SET TIMESTAMP ******************************//**
+*   @brief Turns timestamp on and off.
+*   @param t The timestamp code.  1 for on, 0 for off.
+*   @return True if t is valid, false otherwise.
+************************************************************/
+bool CANusb::setTimestamp(int t)
+{
+    char* timestampMsg = new char[4];
+
+    if ( t != 0 && t != 1 ){
+        cerr << "Invalid timestamp code" << endl;
+        return false;
+    }
+    sprintf(timestampMsg, "Z%d\r", t);
+
+    emit newCommand(timestampMsg);
+    return true;
+}
+
+/*********** SET BITRATE **********************//**
+*   @brief Sets the baud speed of the can usb port.
+*
+*   0 = 10Kbit.
+*   1 = 20Kbit.
+*   2 = 50Kbit.
+*   3 = 100Kbit.
+*   4 = 125Kbit.
+*
+*   5 = 250Kbit.
+*   6 = 500Kbit.
+*   7 = 800Kbit.
+*   8 = 1Mbit.
+*   @param bitrate The bitrate to set the
+*   CAN port to (0-8).
+
+*   @return True if bitrate is valid,
+*   false otherwise.
+*************************************************/
+bool CANusb::setBitRate(int bitrate)
+{
+    char *baudMsg = new char[4];
+
+    if ( (bitrate > 8) || (bitrate < 0) ) {
+        cerr << "Invalid bit rate code" << endl;
+        return false;
+    }
+    sprintf(baudMsg, "S%d\r", bitrate);
+    emit newCommand(baudMsg);
+    return true;
+}
+
+/************ OPEN CAN PORT ******************************//**
+*   @brief Opens the port for sending and
+*   recieving CAN messages.
+*************************************************************/
+void CANusb::openCanPort()
+{
+    char* openMsg = new char[3];
+    snprintf(openMsg, 3, "O\r");
+    emit newCommand(openMsg);
+}
+
+/*********** CLOSE CAN PORT ******************************//**
+*   @brief Closes the port for sending and
+*   recieving CAN messages.
+*************************************************************/
+void CANusb::closeCanPort()
+{
+    char* closeMsg = new char[3];
+    snprintf(closeMsg, 3, "C\r");
+    emit newCommand(closeMsg);
+}
+
+/************ SEND CAN MSG ********************************//**
+*   @brief Sends a CAN message to the canusb
+*   to be sent out on the bus.
+**************************************************************/
+void CANusb::sendCANmsg(CANMsg msg)
+{
+
+    char* sendMsg = new char[23];
+    snprintf(sendMsg, 5, "t%lx", msg.id);
+    sendMsg[4] = '8';
+    for (int i = 7, j = 0; i >= 0; i--, j++) {
+        snprintf(&sendMsg[5+(j*2)], 3, "%02x",msg.data[i]);
+    }
+    sendMsg[21] = '\r';
+    sendMsg[22] = '\0';
+
+    emit newCommand(sendMsg);
+    printf("Sent Message: %s\n", sendMsg);
+}
+
+/************ CLOSE LOG FILE ******************************//**
+*   @brief Calls functin in canWriter class to close the CAN
+*   log file.
+**************************************************************/
+void CANusb::closeLogFile()
+{
+    canWriter->closeLogFile();
+}
+
+/************ OPEN LOG FILE *******************************//**
+*   @brief Calls functin in canWriter class to open the CAN
+*   log file.
+**************************************************************/
+void CANusb::openLogFile()
+{
+    canWriter->openLogFile();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

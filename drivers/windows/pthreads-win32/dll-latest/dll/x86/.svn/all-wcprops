@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/dll/x86
+END
+pthreadVCE2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/dll/x86/pthreadVCE2.dll
+END
+pthreadVSE2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/dll/x86/pthreadVSE2.dll
+END
+pthreadGCE2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/dll/x86/pthreadGCE2.dll
+END
+md5.sum
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/dll/x86/md5.sum
+END
+pthreadVC2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/dll/x86/pthreadVC2.dll
+END
+pthreadGC2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/dll/x86/pthreadGC2.dll
+END

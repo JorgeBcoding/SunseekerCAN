@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/amd64
+END
+ftcserco.dll
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/amd64/ftcserco.dll
+END
+ftd2xx64.dll
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/amd64/ftd2xx64.dll
+END
+ftd2xx.lib
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/amd64/ftd2xx.lib
+END
+ftlang.dll
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/amd64/ftlang.dll
+END
+ftbusui.dll
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/amd64/ftbusui.dll
+END
+ftdibus.sys
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/amd64/ftdibus.sys
+END
+ftser2k.sys
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/amd64/ftser2k.sys
+END
+ftserui2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repo/canusb/!svn/ver/25/canusbV1/drivers/windows/ftd2xx/amd64/ftserui2.dll
+END

@@ -1,0 +1,34 @@
+0x500,int,char[4],Serial Number Low,TRIb string,DC_CAN_BASE
+0x501,float,float,Motor Current Setpoint %,Motor Velocity Setpoint m/s,DC_DRIVE
+0x502,float,null,Bus Current Setpoint %,Unused,DC_POWER
+0x504,int,int,Switch position,Switch state change,DC_SWITCH
+0x400,int,char[4],Serial Number, TRIa string,MC_CAN_BASE
+0x401,int,int,Active Motor,Error & Limit flags,MC_LIMITS
+0x402,float,float,Bus Current,Bus Voltage,MC_BUS
+0x403,float,float,Velocity (m/s),Velocity(rpm),MC_VELOCITY
+0x404,float,float,Phase A Current,Phase B Current,MC_PHASE
+0x405,float,float,Vd vector,Vq vector,MC_V_VECTOR
+0x406,float,float,Id vector,Iq vector,MC_I_VECTOR
+0x407,float,float,BEMFd vector, BEMFq vector,MC_BEMF_VECTOR
+0x408,float,float,15V,1.65V,MC_RAIL1
+0x409,float,float,2.5V,1.2V,MC_RAIL2
+0x40A,float,float,Fan speed (rpm),Fan drive(%),MC_FAN
+0x40B,float,float,Heatsink Temp,Motor Temp,MC_TEMP1
+0x40C,float,float,Inlet Temp,CPU Temp,MC_TEMP2
+0x40D,float,float,Outlet Temp,Capacitor Temp,MC_TEMP3
+0x40E,float,float,DC Bus Amp Hours,Odometer,MC_CUMULATIVE
+0x420,int,char[4],Serial Number, TRIa string,MC_CAN_BASE
+0x421,int,int,Active Motor,Error & Limit flags,MC_LIMITS
+0x422,float,float,Bus Current,Bus Voltage,MC_BUS
+0x423,float,float,Velocity (m/s),Velocity(rpm),MC_VELOCITY
+0x424,float,float,Phase A Current,Phase B Current,MC_PHASE
+0x425,float,float,Vd vector,Vq vector,MC_V_VECTOR
+0x426,float,float,Id vector,Iq vector,MC_I_VECTOR
+0x427,float,float,BEMFd vector, BEMFq vector,MC_BEMF_VECTOR
+0x428,float,float,15V,1.65V,MC_RAIL1
+0x429,float,float,2.5V,1.2V,MC_RAIL2
+0x42A,float,float,Fan speed (rpm),Fan drive(%),MC_FAN
+0x42B,float,float,Heatsink Temp,Motor Temp,MC_TEMP1
+0x42C,float,float,Inlet Temp,CPU Temp,MC_TEMP2
+0x42D,float,float,Outlet Temp,Capacitor Temp,MC_TEMP3
+0x42E,float,float,DC Bus Amp Hours,Odometer,MC_CUMULATIVE

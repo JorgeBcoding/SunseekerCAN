@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+		D7BA7D76DAB5DD13389D6332 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			generatedFileNames = (
+				);
+			isa = PBXShellScriptBuildPhase;
+			name = "Qt Qmake";
+			neededFileNames = (
+				);
+			shellPath = "/bin/sh";
+			shellScript = "make\ -C\ /Users/jorgeb500/Documents/Programing/Senior\ Design/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANmsgDecode\ -f\ \'tst_canmsgdecode_test.xcodeproj/qt_makeqmake.mak\'";
+		};
+		6669D6CC89ADA17938D97142 = {
+			isa = PBXFileReference;
+			name = "tst_canmsgdecode_test.cpp";
+			path = "tst_canmsgdecode_test.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		1FBDCE7F3B8F912BEDB7623A = {
+			fileRef = "6669D6CC89ADA17938D97142";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		AFB70287E4799158A06DC760 = {
+			isa = PBXFileReference;
+			name = "canmsgdecode.cpp";
+			path = "canmsgdecode.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		D52D6375C786CF2746F17845 = {
+			fileRef = "AFB70287E4799158A06DC760";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		1C67A17E07F3F864DAA99E62 = {
+			isa = PBXFileReference;
+			name = "decodedcanmsg.cpp";
+			path = "../DecodedCANmsg/decodedcanmsg.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		B3986AC2334B51EFAC2847E0 = {
+			fileRef = "1C67A17E07F3F864DAA99E62";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		F26106BCBF3810FE135B0EF8 = {
+			isa = PBXFileReference;
+			name = "moc_canmsgdecode.cpp";
+			path = "moc_canmsgdecode.cpp";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		A88AD917AE9C50686596DA96 = {
+			fileRef = "F26106BCBF3810FE135B0EF8";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
+		AB206A1199517105235BB6B1 = {
+			isa = PBXFileReference;
+			name = "canmsgdecode.h";
+			path = "canmsgdecode.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		FC90CCF2EF698BEAA4146E0E = {
+			isa = PBXFileReference;
+			name = "decodedcanmsg.h";
+			path = "../DecodedCANmsg/decodedcanmsg.h";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		6CE6B3D0213AA8AE6FE9CCB0 = {
+			isa = PBXFileReference;
+			name = "CANmsgDecode_Test.pro";
+			path = "CANmsgDecode_Test.pro";
+			refType = 4;
+			sourceTree = "SOURCE_ROOT";
+		};
+		883D7615C4D2DE3FA1218F12 = {
+			isa = PBXGroup;
+			children = (
+				"AB206A1199517105235BB6B1",
+				"4458B98565818D7E2682FA2D");
+			name = "Headers";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		4458B98565818D7E2682FA2D = {
+			isa = PBXGroup;
+			children = (
+				"B85A65AECCF02FF1431695B9");
+			name = "..";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		B85A65AECCF02FF1431695B9 = {
+			isa = PBXGroup;
+			children = (
+				"FC90CCF2EF698BEAA4146E0E");
+			name = "DecodedCANmsg";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		BFA3A29D17FD123C907B6E35 = {
+			isa = PBXGroup;
+			children = (
+				"D29E00D2854CF419A4D27D70");
+			name = "..";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		D29E00D2854CF419A4D27D70 = {
+			isa = PBXGroup;
+			children = (
+				"1C67A17E07F3F864DAA99E62");
+			name = "DecodedCANmsg";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		FB61758D0F0FDA4BA867C3D5 = {
+			isa = PBXGroup;
+			children = (
+				"6669D6CC89ADA17938D97142",
+				"AFB70287E4799158A06DC760",
+				"BFA3A29D17FD123C907B6E35");
+			name = "Sources";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		7CABE3C80E79AD2B307756D2 = {
+			isa = PBXGroup;
+			children = (
+				"6CE6B3D0213AA8AE6FE9CCB0");
+			name = "Sources [qmake]";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		46E892BBB6BB6952967E0561 = {
+			isa = PBXGroup;
+			children = (
+				"F26106BCBF3810FE135B0EF8");
+			name = "Temporary Sources";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		A0A52A2ADF7A1E2A99738674 = {
+			buildActionMask = 2147483647;
+			files = (
+				);
+			generatedFileNames = (
+				"1FBDCE7F3B8F912BEDB7623A",
+				"D52D6375C786CF2746F17845",
+				"B3986AC2334B51EFAC2847E0",
+				"A88AD917AE9C50686596DA96");
+			isa = PBXShellScriptBuildPhase;
+			name = "Qt Preprocessors";
+			neededFileNames = (
+				"1FBDCE7F3B8F912BEDB7623A",
+				"D52D6375C786CF2746F17845",
+				"B3986AC2334B51EFAC2847E0",
+				"A88AD917AE9C50686596DA96");
+			shellPath = "/bin/sh";
+			shellScript = "make\ -C\ /Users/jorgeb500/Documents/Programing/Senior\ Design/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANmsgDecode\ -f\ \'tst_canmsgdecode_test.xcodeproj/qt_preprocess.mak\'";
+		};
+		C29B8785722055ED95EF7B57 = {
+			buildActionMask = 2147483647;
+			files = (
+				"1FBDCE7F3B8F912BEDB7623A",
+				"D52D6375C786CF2746F17845",
+				"B3986AC2334B51EFAC2847E0",
+				"A88AD917AE9C50686596DA96");
+			isa = PBXSourcesBuildPhase;
+			name = "Build Sources";
+		};
+		7173CE98C24B9E5E040544F3 = {
+			isa = PBXFrameworkReference;
+			name = "QtTest.framework";
+			path = "/Library/Frameworks/QtTest.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		22DAF118661CD4F4E5D8AA94 = {
+			fileRef = "7173CE98C24B9E5E040544F3";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		B41DB44ED1FE16D3A80D5696 = {
+			isa = PBXFrameworkReference;
+			name = "IOKit.framework";
+			path = "/System/Library/Frameworks/IOKit.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		E8B9F0C58A5A7125FD5B79D3 = {
+			fileRef = "B41DB44ED1FE16D3A80D5696";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		E5F0053C062927C45241E2C9 = {
+			isa = PBXFrameworkReference;
+			name = "Security.framework";
+			path = "/System/Library/Frameworks/Security.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		17464BC6FD6FA1B80DDC55E5 = {
+			fileRef = "E5F0053C062927C45241E2C9";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		27AE7A480FD6C52FCA80FECD = {
+			isa = PBXFrameworkReference;
+			name = "ApplicationServices.framework";
+			path = "/System/Library/Frameworks/ApplicationServices.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		F9E76E570E10AF14870553A7 = {
+			fileRef = "27AE7A480FD6C52FCA80FECD";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		7BC2E65A5E699A5E5D834CA2 = {
+			isa = PBXFrameworkReference;
+			name = "QtCore.framework";
+			path = "/Library/Frameworks/QtCore.framework";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		069D05B0128AE5DC7EE31738 = {
+			fileRef = "7BC2E65A5E699A5E5D834CA2";
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		ED1E82605DD74B483AF3C982 = {
+			children = (
+				"7173CE98C24B9E5E040544F3",
+				"B41DB44ED1FE16D3A80D5696",
+				"E5F0053C062927C45241E2C9",
+				"27AE7A480FD6C52FCA80FECD",
+				"7BC2E65A5E699A5E5D834CA2");
+			isa = PBXGroup;
+			name = "External Frameworks and Libraries";
+			path = "";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		2A1043669E6E5A7426EA502A = {
+			buildActionMask = 2147483647;
+			files = (
+				"22DAF118661CD4F4E5D8AA94",
+				"E8B9F0C58A5A7125FD5B79D3",
+				"17464BC6FD6FA1B80DDC55E5",
+				"F9E76E570E10AF14870553A7",
+				"069D05B0128AE5DC7EE31738");
+			isa = PBXFrameworksBuildPhase;
+			name = "Frameworks & Libraries";
+		};
+		05596AB53D8D521C69802C27 = {
+			children = (
+				"FB61758D0F0FDA4BA867C3D5",
+				"46E892BBB6BB6952967E0561",
+				"883D7615C4D2DE3FA1218F12",
+				"7CABE3C80E79AD2B307756D2",
+				"ED1E82605DD74B483AF3C982");
+			isa = PBXGroup;
+			name = "tst_canmsgdecode_test";
+			path = "";
+			refType = 4;
+			sourceTree = "<Group>";
+		};
+		B8CB2C251531834EB5C68EF4 = {
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.executable";
+			path = "tst_canmsgdecode_test";
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		068F80C7519D0528FB08E821 = {
+			children = (
+				"B8CB2C251531834EB5C68EF4");
+			isa = PBXGroup;
+			name = "Products";
+			refType = 4;
+		};
+		85939A4BB60A6A58BA2E1C9D = {
+			buildPhases = (
+				"D7BA7D76DAB5DD13389D6332",
+				"A0A52A2ADF7A1E2A99738674",
+				"C29B8785722055ED95EF7B57",
+				"2A1043669E6E5A7426EA502A");
+			buildSettings = {
+				CC = "/usr/bin/gcc";
+				CPLUSPLUS = "/usr/bin/g++";
+				LEXFLAGS = "";
+				YACCFLAGS = "-d";
+				OTHER_REZFLAGS = "";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				PREBINDING = NO;
+				BUILD_ROOT = "/Users/jorgeb500/Documents/Programing/Senior Design/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANmsgDecode";
+				OTHER_LDFLAGS = (
+						"-headerpad_max_install_names",
+						"-L/Library/Frameworks",
+						"-F/Library/Frameworks");
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				MACOSX_DEPLOYMENT_TARGET = "10.4";
+				PRODUCT_NAME = "tst_canmsgdecode_test";
+			};
+			conditionalBuildSettings = {
+			};
+			dependencies = (
+				);
+			productReference = "B8CB2C251531834EB5C68EF4";
+			shouldUseHeadermap = 1;
+			buildConfigurationList = 17B3380A4D6A7D415E7F2E1E;
+			isa = PBXNativeTarget;
+			productType = "com.apple.product-type.tool";
+			name = "tst_canmsgdecode_test";
+			productName = "tst_canmsgdecode_test";
+			startupPath = "<<ProjectDirectory>>";
+		};
+		4B72B24813252891014BCF61 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				PRODUCT_NAME = "tst_canmsgdecode_test";
+				HEADER_SEARCH_PATHS = (
+					"/Library/Frameworks/QtCore.framework/Versions/4/Headers",
+					"/usr/include/QtCore",
+					"/Library/Frameworks/QtTest.framework/Versions/4/Headers",
+					"/usr/include/QtTest",
+					"/usr/include",
+					"../../Sunseeker_CAN_GUI",
+					".",
+					"/usr/local/include",
+					"/System/Library/Frameworks/CarbonCore.framework/Headers",
+					"/usr/local/Qt4.8/mkspecs/macx-xcode");
+				LIBRARY_SEARCH_PATHS = (
+					"/Library/Frameworks",
+					"/System/Library/Frameworks/");
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Library/Frameworks",
+					"/Library/Frameworks");
+				INFOPLIST_FILE = "Info.plist";
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DSRCDIR=\\"/Users/jorgeb500/Documents/Programing/Senior Design/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANmsgDecode//\\"",
+					"-DQT_TESTLIB_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DSRCDIR=\\"/Users/jorgeb500/Documents/Programing/Senior Design/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANmsgDecode//\\"",
+					"-DQT_TESTLIB_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED");
+				OTHER_LDFLAGS = (
+						"-headerpad_max_install_names",
+						"-L/Library/Frameworks",
+						"-F/Library/Frameworks");
+				ARCHS = "x86_64";
+			};
+			name = "Debug";
+		};
+		BEC09A62E69C3553534FF35E = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				PRODUCT_NAME = "tst_canmsgdecode_test";
+				PRODUCT_NAME = "tst_canmsgdecode_test";
+			};
+			name = "Debug";
+		};
+		2C641C3335766025DD51B7BD = {
+			buildRules = (
+				);
+			buildSettings = {
+				COPY_PHASE_STRIP = "NO";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "YES";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				PRODUCT_NAME = "tst_canmsgdecode_test";
+			};
+			isa = "PBXBuildStyle";
+			name = "Debug";
+		};
+		D70590BEB531B51029F711BB = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = "YES";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
+				PRODUCT_NAME = "tst_canmsgdecode_test";
+				HEADER_SEARCH_PATHS = (
+					"/Library/Frameworks/QtCore.framework/Versions/4/Headers",
+					"/usr/include/QtCore",
+					"/Library/Frameworks/QtTest.framework/Versions/4/Headers",
+					"/usr/include/QtTest",
+					"/usr/include",
+					"../../Sunseeker_CAN_GUI",
+					".",
+					"/usr/local/include",
+					"/System/Library/Frameworks/CarbonCore.framework/Headers",
+					"/usr/local/Qt4.8/mkspecs/macx-xcode");
+				LIBRARY_SEARCH_PATHS = (
+					"/Library/Frameworks",
+					"/System/Library/Frameworks/");
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Library/Frameworks",
+					"/Library/Frameworks");
+				INFOPLIST_FILE = "Info.plist";
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DSRCDIR=\\"/Users/jorgeb500/Documents/Programing/Senior Design/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANmsgDecode//\\"",
+					"-DQT_TESTLIB_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED");
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DSRCDIR=\\"/Users/jorgeb500/Documents/Programing/Senior Design/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANmsgDecode//\\"",
+					"-DQT_TESTLIB_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED");
+				OTHER_LDFLAGS = (
+						"-headerpad_max_install_names",
+						"-L/Library/Frameworks",
+						"-F/Library/Frameworks");
+				ARCHS = "x86_64";
+			};
+			name = "Release";
+		};
+		8C7174830A1E4DCBA0332EC1 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = "YES";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
+				PRODUCT_NAME = "tst_canmsgdecode_test";
+				PRODUCT_NAME = "tst_canmsgdecode_test";
+			};
+			name = "Release";
+		};
+		26DE8D2AEA4B3714B41E931F = {
+			buildRules = (
+				);
+			buildSettings = {
+				COPY_PHASE_STRIP = "YES";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "NO";
+				PRODUCT_NAME = "tst_canmsgdecode_test";
+			};
+			isa = "PBXBuildStyle";
+			name = "Release";
+		};
+		CC82A9286117DFED018F418F = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"4B72B24813252891014BCF61",
+				"D70590BEB531B51029F711BB");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationIsName = "Debug";
+		};
+		17B3380A4D6A7D415E7F2E1E = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"BEC09A62E69C3553534FF35E",
+				"8C7174830A1E4DCBA0332EC1");
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationIsName = "Debug";
+		};
+		91B15E841AA80083484172DE = {
+			buildStyles = (
+				"2C641C3335766025DD51B7BD",
+				"26DE8D2AEA4B3714B41E931F");
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = "05596AB53D8D521C69802C27";
+			buildConfigurationList = "CC82A9286117DFED018F418F";
+			projectDirPath = "";
+			targets = (
+				"85939A4BB60A6A58BA2E1C9D");
+		};
+	};
+	rootObject = "91B15E841AA80083484172DE";
+}

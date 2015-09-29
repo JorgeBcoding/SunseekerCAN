@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/libs
+END
+ftcserco.dll
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/libs/ftcserco.dll
+END
+ftd2xx.lib
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/libs/ftd2xx.lib
+END
+ftlang.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/libs/ftlang.dll
+END
+ftd2xx.dll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/libs/ftd2xx.dll
+END
+ftbusui.dll
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/libs/ftbusui.dll
+END
+ftdibus.sys
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/libs/ftdibus.sys
+END
+ftser2k.sys
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/libs/ftser2k.sys
+END
+ftserui2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/libs/ftserui2.dll
+END

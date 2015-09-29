@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/include
+END
+md5.sum
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/include/md5.sum
+END
+semaphore.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/include/semaphore.h
+END
+sched.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/include/sched.h
+END
+pthread.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repo/canusb/!svn/ver/11/canusbV1/drivers/windows/pthreads-win32/dll-latest/include/pthread.h
+END

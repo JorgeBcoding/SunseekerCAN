@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repo/canusb/!svn/ver/77/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANusb
+END
+canthread.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repo/canusb/!svn/ver/75/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANusb/canthread.h
+END
+canusbreader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repo/canusb/!svn/ver/75/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANusb/canusbreader.cpp
+END
+canusb.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repo/canusb/!svn/ver/75/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANusb/canusb.h
+END
+threadglobals.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repo/canusb/!svn/ver/46/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANusb/threadglobals.h
+END
+ftd2xx.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANusb/ftd2xx.h
+END
+WinTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANusb/WinTypes.h
+END
+canusbwriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repo/canusb/!svn/ver/72/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANusb/canusbwriter.cpp
+END
+ui_sunseekercan.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANusb/ui_sunseekercan.h
+END
+canusb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repo/canusb/!svn/ver/77/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANusb/canusb.cpp
+END
+._.DS_Store
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repo/canusb/!svn/ver/32/canusbV1/trunk/CAN_GUI/Sunseeker_CAN_GUI/CANusb/._.DS_Store
+END
